@@ -1,0 +1,48 @@
+#Header
+{
+padding: 20px; margin: 40px;
+width: 1150px;
+height: 200px;
+background-image:url('image5.jpg');
+position: top;
+border: none;
+}
+
+#Nav
+{
+padding: 20px; margin: 40px;
+height: 600px;
+width: 220px;
+right: -930px;
+background-color:#3cb371;
+position: relative;
+border: none;
+text-align: center;
+vertical-align: middle;
+}
+
+#Main
+{
+padding: 20px; margin: 40px;
+height: 600px;
+width: 830px;
+background-color:#3cb371;
+border: none;
+position: relative;
+top: -680px;
+left: 0px;
+}
+
+#Footer
+{
+padding: 20px; margin: 40px;
+width: 1150px;
+height: 200px;
+border: none;
+background-image:url('image3.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+bottom: 680px;
+vertical-align: bottom;
+}

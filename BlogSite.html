@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<title>Amit's VideoGame BlogSite</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="styles2.css">
+  <body>
+
+    <!-- Components of BlogSite -->
+	<div id="Header"></div>
+	<div id="Nav"></div>
+	<div id="Main"></div>
+	<div id="Footer"></div>
+	
+	<script type="text/jsx">
+		
+	var Navigator = React.createClass({
+            render: function() {
+                return (
+                        <h2>Navigation</h2>
+                );
+            }
+        });
+        React.render(<Navigator />, document.getElementById('Nav'));
+	
+	var Footer = React.createClass({
+            render: function() {
+                return (
+                        <h4>Copyright &copy; Amit Singh</h4>
+                );
+            }
+        });
+        React.render(<Footer />, document.getElementById('Footer'));
+	
+
+	var d = new Date(2018, 11, 24);	
+	var Blog1 = React.createClass({
+            render: function() {
+                return (
+                        <div><h1>First Blog Post!</h1>
+							<h4>Posted December 20th, 2017</h4>
+							<p>This is my first blog post!</p>
+							</div>
+                );
+            }
+        });
+		
+	
+	var Blog2 = React.createClass({
+            render: function() {
+                return (
+                        <div><h1>Favorite Games!</h1>
+							<h4>Posted January 12th, 2018</h4>
+							<p>My favorite games include Fire Emblem, Kingdom Hearts, and Pokemon!</p>
+							</div>
+                );
+            }
+        });
+	
+	var Blog3 = React.createClass({
+            render: function() {
+                return (
+                        <div><h1>Why Kingdom Hearts is so Cool!</h1>
+							<h4>Posted February 18th, 2018</h4>
+							<p>Kingdom Hearts was one of the first east-meets-west collaborations that worked surprisingly well,
+							meshing the japanese sensibilities of story-telling with the classic appeal of disney characters.</p>
+							</div>
+                );
+            }
+        });
+	
+        React.render(<div>
+		<Blog1 />
+		<Blog2 />
+		<Blog3 />
+		</div>
+		, document.getElementById('Main'));	
+	
+	</script>
+
+  </body>
+</html>
